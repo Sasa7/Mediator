@@ -17,8 +17,7 @@ namespace MediatorTests
             Screen aScreen = new Screen(aSystem);
             //Act
             aComputer.SwitchOn();
-            aKeyboard.KeyPressed();
-            aScreen.DisplayCharacter("a");
+            aKeyboard.KeyPressed("C");
             //Assert
         }
     }

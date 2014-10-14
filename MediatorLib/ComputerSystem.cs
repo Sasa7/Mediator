@@ -37,9 +37,10 @@ namespace MediatorLib
             Console.WriteLine("Computer switched OFF");
         }
 
-        internal void KeyboardKeyPressed()
+        internal void KeyboardKeyPressed(string key)
         {
             Console.WriteLine("Keyboard key pressed");
+            screen.DisplayCharacter(key);
         }
     }
 }

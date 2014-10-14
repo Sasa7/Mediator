@@ -25,9 +25,9 @@ namespace MediatorLib
 
         }
 
-        public void KeyPressed()
+        public void KeyPressed(string key)
         {
-            mediator.KeyboardKeyPressed();
+            mediator.KeyboardKeyPressed(key);
         }
     }
 }
