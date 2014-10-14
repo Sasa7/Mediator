@@ -8,5 +8,11 @@ namespace MediatorLib
 {
     public class Keyboard
     {
+        private ComputerSystem mediator;
+        public Keyboard(ComputerSystem mediator)
+        {
+            this.mediator = mediator;
+            this.mediator.RegisterKeyboard(this);
+        }
     }
 }

@@ -8,5 +8,11 @@ namespace MediatorLib
 {
     public class Computer
     {
+        private ComputerSystem mediator;
+        public Computer(ComputerSystem mediator)
+        {
+            this.mediator = mediator;
+            this.mediator.RegisterComputer(this);
+        }
     }
 }
