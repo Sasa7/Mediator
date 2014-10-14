@@ -14,5 +14,15 @@ namespace MediatorLib
             this.mediator = mediator;
             this.mediator.RegisterComputer(this);
         }
+
+        public void SwitchOn()
+        {
+            this.mediator.ComputerSwitchedOn();
+        }
+
+        public void SwitchOff()
+        {
+            this.mediator.ComputerSwitchedOff();
+        }
     }
 }

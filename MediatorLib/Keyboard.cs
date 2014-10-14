@@ -14,5 +14,20 @@ namespace MediatorLib
             this.mediator = mediator;
             this.mediator.RegisterKeyboard(this);
         }
+
+        public void Enabled()
+        {
+
+        }
+
+        public void Disabled()
+        {
+
+        }
+
+        public void KeyPressed()
+        {
+            mediator.KeyboardKeyPressed();
+        }
     }
 }

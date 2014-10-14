@@ -26,5 +26,20 @@ namespace MediatorLib
         {
             this.screen = screen;
         }
+
+        internal void ComputerSwitchedOn()
+        {
+            Console.WriteLine("Computer switched ON");
+        }
+
+        internal void ComputerSwitchedOff()
+        {
+            Console.WriteLine("Computer switched OFF");
+        }
+
+        internal void KeyboardKeyPressed()
+        {
+            Console.WriteLine("Keyboard key pressed");
+        }
     }
 }

@@ -14,5 +14,20 @@ namespace MediatorLib
             this.mediator = mediator;
             this.mediator.RegisterScreen(this);
         }
+
+        public void TurnOn()
+        {
+
+        }
+
+        public void TurnOff()
+        {
+
+        }
+
+        public void DisplayCharacter(string key)
+        {
+            Console.WriteLine(key);
+        }
     }
 }

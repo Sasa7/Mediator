@@ -12,7 +12,13 @@ namespace MediatorTests
         {
             //Arrange
             ComputerSystem aSystem = new ComputerSystem();
+            Computer aComputer = new Computer(aSystem);
+            Keyboard aKeyboard = new Keyboard(aSystem);
+            Screen aScreen = new Screen(aSystem);
             //Act
+            aComputer.SwitchOn();
+            aKeyboard.KeyPressed();
+            aScreen.DisplayCharacter("a");
             //Assert
         }
     }
